@@ -126,7 +126,7 @@ class PlayList {
      *  is negative or too big for this list, does nothing. */
     public void remove(String title) {
         for (int i = 0; i < size ; i++) {
-           if (tracks[i].getTitle() == title) {
+           if (tracks[i].getTitle().equals(title)) {
                for (int j = i; j < size-1; j++) {
                tracks[j] =  tracks [j+1];
             }  
