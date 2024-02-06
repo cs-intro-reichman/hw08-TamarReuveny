@@ -154,11 +154,11 @@ class PlayList {
     //// An elegant and terribly inefficient implementation.
      public void add(PlayList other) {
         int otherPlaylistSize = other.getSize();
-        if (size + otherPlaylistSize > maxSize) {
+        if (this.size + otherPlaylistSize > this.maxSize) {
             return;
         }
         int index = 0;
-        for (int i = size; i < size+otherPlaylistSize-1; i++) {
+        for (int i = this.size; i < this.size+otherPlaylistSize-1; i++) {
             this.tracks[i] = other.getTrack(index);
             index++;
 
