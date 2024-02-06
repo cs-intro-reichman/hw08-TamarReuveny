@@ -194,6 +194,10 @@ class PlayList {
         if (size == 0) {
             return null;
         }
+        int minIndex = minIndex(0);
+        if (minIndex == -1) {
+            return null;
+        }
         return tracks[minIndex(0)].getTitle();
     }
 
