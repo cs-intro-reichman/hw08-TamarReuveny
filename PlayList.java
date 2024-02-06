@@ -43,7 +43,6 @@ class PlayList {
         return false;
        
     }
-   
 
     /** Returns the data of this list, as a string. Each track appears in a separate line. */
     //// For an efficient implementation, use StringBuilder.
@@ -81,7 +80,8 @@ class PlayList {
      *  If such a track is not found, returns -1. */
     public int indexOf(String title) {
         for (int i = 0; i < size ; i++) {
-            if (tracks[i].getTitle().equals(title)) {
+            title = title.toLowerCase();
+            if (tracks[i].getTitle().toLowerCase().equals(title)) {
                 return i;
             }
         }
@@ -119,8 +119,6 @@ class PlayList {
         tracks[size-1] = null;
         size--;
      }
-       
-
     /** Removes the first track that has the given title from this list.
      *  If such a track is not found, or the list is empty, or the given index
      *  is negative or too big for this list, does nothing. */
