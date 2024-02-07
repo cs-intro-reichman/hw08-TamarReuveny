@@ -51,9 +51,9 @@ class PlayList {
         for (int i = 0; i < size; i++) {
             dataList.append(tracks[i].toString());
             if (i < size - 1) {
-                dataList.append("\n"); 
+              dataList.append("\n"); 
+            }
         }
-    }
         return dataList.toString();
     }
 
