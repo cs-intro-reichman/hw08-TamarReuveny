@@ -60,11 +60,8 @@ class PlayList {
 
     /** Removes the last track from this list. If the list is empty, does nothing. */
      public void removeLast() {
-        if (size==0) {
-            return;
-        }
+        if (size>0) {
         size--;
-        tracks[size] = null;
     }
     
     /** Returns the total duration (in seconds) of all the tracks in this list.*/
@@ -98,11 +95,12 @@ class PlayList {
         if (i < 0 || i > size || size == maxSize) {
             return false; 
         }
-        for (int j = size; j > i; j--) {
+        size++;
+        for (int j = size-1; j > i; j--) {
             tracks[j] = tracks[j-1];
         }
         tracks[i] = track;
-        size++;
+       
         return true;
     }
      
@@ -207,4 +205,5 @@ class PlayList {
         // calling the minIndex method in each iteration.
         //// replace this statement with your code
     }
+}
 }
