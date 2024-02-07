@@ -33,8 +33,8 @@ public class CombinedOperationsTester {
 
 
         // Final state of the playlist
-        System.out.println("Final Playlist Size: " + playList.getSize());
-        System.out.println("Final Total Duration: " + playList.totalDuration() + " seconds");
+        //System.out.println("Final Playlist Size: " + playList.getSize());
+        //System.out.println("Final Total Duration: " + playList.totalDuration() + " seconds");
     
 
 
@@ -55,7 +55,7 @@ public class CombinedOperationsTester {
         // Sorting the playlist
         playList.sortedInPlace();
         System.out.println("Playlist sorted by increasing duration.");
-        System.out.println(playList);
+        //System.out.println(playList);
         //Since we can't directly print sorted tracks, let's focus on aspects we can test
         // Displaying the title of the shortest track after sorting
         System.out.println("Shortest track after sorting: " + playList.titleOfShortestTrack());
