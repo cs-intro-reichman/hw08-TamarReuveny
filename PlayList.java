@@ -61,7 +61,9 @@ class PlayList {
     /** Removes the last track from this list. If the list is empty, does nothing. */
      public void removeLast() {
         if (size>0) {
+            tracks[size-1] = null;
         size--;
+    }
     }
     
     /** Returns the total duration (in seconds) of all the tracks in this list.*/
@@ -206,4 +208,5 @@ class PlayList {
         //// replace this statement with your code
     }
 }
-}
+
+
