@@ -28,7 +28,8 @@ class RuniFi {
 
         // Inserts a track to some location
         myList.add(1, track5);
-        display("After adding Yesterday at location 1", myList);
+       // display("After adding Yesterday at location 1", myList);
+       System.out.println("After adding Yesterday at location 1:\n" + myList);
 
         // Tests the ability to find the locations of track titles
         System.out.println("\nIndex of Creep: " + myList.indexOf("Creep"));
